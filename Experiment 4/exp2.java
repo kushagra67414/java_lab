@@ -1,20 +1,21 @@
+package lab4;
+
+
+
 class player
 {
 String name;
 int age;
 player(String n,int a)
 { name=n; age=a; }
-
 void show()
 {
+	
 System.out.println("\n");
 System.out.println("Player name : "+name);
 System.out.println("Age : "+age);
 }
 }
-
-
-
 class criket_player extends player
 {
 String type;
@@ -29,12 +30,10 @@ super.show();
 System.out.println("Player type : "+type);
 }
 }
-
-
-
 class football_player extends player
 {
-String type;
+String type;23
+
 football_player(String n,String t,int a)
 {
 super(n,a);
@@ -46,10 +45,6 @@ super.show();
 System.out.println("Player type : "+type);
 }
 }
-
-
-
-
 class hockey_player extends player
 {
 String type;
@@ -65,15 +60,16 @@ System.out.println("Player type : "+type);
 }
 }
 
-class Test
-{
-public static void main(String args[])
-{
-criket_player c=new criket_player("Ameer","criket",25);
-football_player f=new football_player("arun","foot ball",25);
-hockey_player h=new hockey_player("Ram","hockey",25);
-c.show();
-f.show();
-h.show();
-}
-}
+
+public class exp2 {
+	public static void main(String args[])
+	{
+	criket_player x = new criket_player("Ameer","criket",25);
+	football_player y=new football_player("arun","foot ball",25);
+	hockey_player z =new hockey_player("Ram","hockey",25);
+	x.show();
+	y.show();
+	z.show();
+	}
+
+}	
